@@ -1,0 +1,42 @@
+<div class="sign_up_modal modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home">
+          <div class="login_form">
+            <div class="heading">
+              <h3 class="text-center">{{#str}} login_welcome, theme_edumy {{/str}}</h3>
+              {{#signup_is_enabled}}
+                <p class="text-center">{{#str}} login_no_account, theme_edumy {{/str}} <a class="text-thm" href="{{{ config.wwwroot }}}/login/signup.php">{{#str}} signup, theme_edumy {{/str}}</a></p>
+              {{/signup_is_enabled}}
+            </div>
+            {{#hasloginblocks}}
+              {{{ loginblocks }}}
+            {{/hasloginblocks}}
+            {{^hasloginblocks}}
+              <p class="text-center">No blocks assigned to the <b>Modal Login</b> region.</p>
+            {{/hasloginblocks}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="search_overlay">
+  <div class="mk-fullscreen-search-overlay" id="mk-search-overlay">
+    <a href="#" class="mk-fullscreen-close" id="mk-fullscreen-close-button"><i class="fa fa-times"></i></a>
+    <div id="mk-fullscreen-search-wrapper">
+      <div id="ccn_mk-fullscreen-search-wrapper">
+        {{#hassearchblocks}}
+          {{{ searchblocks }}}
+        {{/hassearchblocks}}
+        {{^hassearchblocks}}
+          <p class="text-center">No blocks assigned to the <b>Modal Login</b> region.</p>
+        {{/hassearchblocks}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,101 @@
+{{> theme_boost/head }}
+<body {{{ bodyattributes }}}>
+  <div class="preloader"></div>
+  <div class="wrapper">
+    {{> theme_boost/navbar }}
+    <div id="ccn-page-wrapper">
+      {{{ output.standard_top_of_body_html }}}
+      <div>
+        {{{ output.full_header }}}
+        {{{ blocks_fullwidth_top }}}
+        <div id="ccn-main-region">
+          {{#hasregionmainsettingsmenu}}
+            <div id="region-main-settings-menu" class="d-print-none {{#hasblocks}}has-blocks{{/hasblocks}}">
+              <div> {{{ output.region_main_settings_menu }}} </div>
+            </div>
+          {{/hasregionmainsettingsmenu}}
+          <div class="container">
+            <div class="row">
+              {{#hasleftblocks}}
+                <div class="col-lg-4 col-xl-4">
+                  <div class="d-print-none" aria-label="{{#str}}blocks{{/str}}">
+                    {{{ leftblocks }}}
+                  </div>
+                </div>
+              {{/hasleftblocks}}
+              {{^hassideblocks}}
+                <div class="col-md-12 col-lg-12 col-xl-12">
+              {{/hassideblocks}}
+              {{#hasblocks}}
+                <div class="col-md-12 col-lg-8 col-xl-9">
+              {{/hasblocks}}
+              {{#hasleftblocks}}
+                <div class="col-lg-8 col-xl-8">
+              {{/hasleftblocks}}
+              <div {{#hasblocks}}class="has-blocks" {{/hasblocks}} aria-label="{{#str}}content{{/str}}">
+                {{#hasregionmainsettingsmenu}}
+                  <div class="region_main_settings_menu_proxy"></div>
+                {{/hasregionmainsettingsmenu}}
+                {{#has_blocks_above_content}}
+                  {{{ blocks_above_content }}}
+                {{/has_blocks_above_content}}
+                <div id="ccn-main">
+                  {{#is_course}}
+                    <div class="cs_row_three">
+                      <div class="course_content">
+                        <div class="cc_headers">
+                          <h4 class="title">{{#str}}course_content, theme_edumy{{/str}}</h4>
+                          <ul class="course_schdule float-right">
+                            <li class="list-inline-item"><a href="#">{{#str}}startdate{{/str}}: {{{ coursestartdate }}} </a></li>
+                            <li class="list-inline-item"><a href="#">{{#str}}category{{/str}}: {{{ coursecategory }}}</a></li>
+                          </ul>
+                        </div>
+                        <br>
+                  {{/is_course}}
+                  {{{ output.course_content_header }}}
+                  {{#is_blog}}
+                  {{/is_blog}}
+                  {{{ output.main_content }}}
+                  {{#is_blog}}
+                  {{/is_blog}}
+                  {{{ output.activity_navigation }}}
+                  {{{ output.course_content_footer }}}
+                  {{#is_course}}
+                      </div>
+                    </div>
+                  {{/is_course}}
+                </div>
+                {{#has_blocks_below_content}}
+                  {{{ blocks_below_content }}}
+                {{/has_blocks_below_content}}
+              </div>
+              {{#hasblocks}}
+              </div>
+              <div class="col-lg-4 col-xl-3">
+                <div class="d-print-none" aria-label="{{#str}}blocks{{/str}}">
+                  {{{ sidepreblocks }}}
+                </div>
+              </div>
+              {{/hasblocks}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{> theme_boost/footer }}
+  </div>
+  {{{ output.standard_after_main_region_html }}}
+</body>
+
+</html>
+{{#js}}
+  M.util.js_pending('theme_boost/loader');
+  require(['theme_boost/loader'], function() {
+  M.util.js_complete('theme_boost/loader');
+  });
+  M.util.js_pending('theme_boost/drawer');
+  require(['theme_boost/drawer'], function(mod) {
+  mod.init();
+  M.util.js_complete('theme_boost/drawer');
+  });
+{{/js}}

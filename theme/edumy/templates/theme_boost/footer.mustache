@@ -1,0 +1,275 @@
+{{#is_frontpage}}
+  {{#footer_4}}
+    <section class="footer_one home8 pb0">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            {{#logo_footer}}
+              <div class="logo-widget home8 mb60">
+                {{#logo_image_footer}}<img class="img-fluid" src="{{{footerlogo1}}}" alt="{{ sitename }}">{{/logo_image_footer}}
+                {{#logotype_footer}}<span>{{ sitename }}</span>{{/logotype_footer}}
+              </div>
+            {{/logo_footer}}
+            <div class="footer_contact_widget home8 text-center">
+              {{{footer_col_1_body}}}
+            </div>
+            <div class="footer_social_widget home8 mt35 mb80">
+              <ul>
+                {{#cocoon_facebook_url}}
+                  <li class="list-inline-item"><a href="{{{ cocoon_facebook_url }}}"><i class="fa fa-facebook"></i></a></li>
+                {{/cocoon_facebook_url}}
+                {{#cocoon_twitter_url}}
+                  <li class="list-inline-item"><a href="{{{ cocoon_twitter_url }}}"><i class="fa fa-twitter"></i></a></li>
+                {{/cocoon_twitter_url}}
+                {{#cocoon_instagram_url}}
+                  <li class="list-inline-item"><a href="{{{ cocoon_instagram_url }}}"><i class="fa fa-instagram"></i></a></li>
+                {{/cocoon_instagram_url}}
+                {{#cocoon_pinterest_url}}
+                  <li class="list-inline-item"><a href="{{{ cocoon_pinterest_url }}}"><i class="fa fa-pinterest"></i></a></li>
+                {{/cocoon_pinterest_url}}
+                {{#cocoon_dribbble_url}}
+                  <li class="list-inline-item"><a href="{{{ cocoon_dribbble_url }}}"><i class="fa fa-dribbble"></i></a></li>
+                {{/cocoon_dribbble_url}}
+                {{#cocoon_google_url}}
+                  <li class="list-inline-item"><a href="{{{ cocoon_google_url }}}"><i class="fa fa-google"></i></a></li>
+                {{/cocoon_google_url}}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          {{#cocoon_copyright}}
+            <div class="col-lg-6 col-xl-6">
+              <div class="copyright-widget text-center mt25">
+                <p>{{{ cocoon_copyright }}}</p>
+              </div>
+            </div>
+          {{/cocoon_copyright}}
+          {{#footer_menu}}
+            <div class="col-lg-6 col-xl-6 pb25 pt25 text-right tac-smd">
+              <div class="footer_menu_widget home3">
+                {{{footer_menu}}}
+              </div>
+            </div>
+          {{/footer_menu}}
+        </div>
+      </div>
+    </section>
+  {{/footer_4}}
+  {{^footer_4}}
+    <section class="footer_one {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home4 {{/footer_3}}">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-md-3 col-lg-3">
+            <div class="footer_contact_widget {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home4 {{/footer_3}}">
+              <h4>{{{ footer_col_1_title }}}</h4>
+              {{{ footer_col_1_body }}}
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-md-3 col-lg-2">
+            <div class="footer_company_widget {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home4 {{/footer_3}}">
+              <h4>{{{ footer_col_2_title }}}</h4>
+              {{{ footer_col_2_body }}}
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-md-3 col-lg-2">
+            <div class="footer_program_widget {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home4 {{/footer_3}}">
+              <h4>{{{ footer_col_3_title }}}</h4>
+              {{{ footer_col_3_body }}}
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-md-3 col-lg-2">
+            <div class="footer_support_widget {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home4 {{/footer_3}}">
+              <h4>{{{ footer_col_4_title }}}</h4>
+              {{{ footer_col_4_body }}}
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-md-3 col-lg-3">
+            <div class="footer_apps_widget {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home4 {{/footer_3}}">
+              <h4>{{{ footer_col_5_title }}}</h4>
+              {{{ footer_col_5_body }}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer_middle_area p0 {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home4 {{/footer_3}}">
+      <div class="container">
+        <div class="row">
+          {{#logo_footer}}
+            <div class="col-sm-4 {{#logotype_footer}}col-md-3 col-lg-3 col-xl-2{{/logotype_footer}}{{^logotype_footer}}col-md-1 mr25{{/logotype_footer}} pb15 pt15">
+              <div class="logo-widget {{#footer_1}} home1 {{/footer_1}}  {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home3 {{/footer_3}}">
+                {{#logo_image_footer}} <img class="img-fluid" src="{{{footerlogo1}}}" alt="{{ sitename }}">{{/logo_image_footer}}
+                {{#logotype_footer}}<span>{{ sitename }}</span>{{/logotype_footer}}
+              </div>
+            </div>
+          {{/logo_footer}}
+          {{#footer_menu}}
+            <div class="col-sm-8 col-md-5 col-lg-6 col-xl-6 pb25 pt25 brdr_left_right">
+              <div class="footer_menu_widget">
+                {{{footer_menu}}}
+              </div>
+            </div>
+          {{/footer_menu}}
+          <div class="col-sm-12 col-md-4 col-lg-3 col-xl-4 pb15 pt15">
+            <div class="footer_social_widget mt15">
+              <ul>
+                {{#cocoon_facebook_url}}
+                  <li class="list-inline-item"><a href="{{{ cocoon_facebook_url }}}"><i class="fa fa-facebook"></i></a></li>
+                {{/cocoon_facebook_url}}
+                {{#cocoon_twitter_url}}
+                  <li class="list-inline-item"><a href="{{{ cocoon_twitter_url }}}"><i class="fa fa-twitter"></i></a></li>
+                {{/cocoon_twitter_url}}
+                {{#cocoon_instagram_url}}
+                  <li class="list-inline-item"><a href="{{{ cocoon_instagram_url }}}"><i class="fa fa-instagram"></i></a></li>
+                {{/cocoon_instagram_url}}
+                {{#cocoon_pinterest_url}}
+                  <li class="list-inline-item"><a href="{{{ cocoon_pinterest_url }}}"><i class="fa fa-pinterest"></i></a></li>
+                {{/cocoon_pinterest_url}}
+                {{#cocoon_dribbble_url}}
+                  <li class="list-inline-item"><a href="{{{ cocoon_dribbble_url }}}"><i class="fa fa-dribbble"></i></a></li>
+                {{/cocoon_dribbble_url}}
+                {{#cocoon_google_url}}
+                  <li class="list-inline-item"><a href="{{{ cocoon_google_url }}}"><i class="fa fa-google"></i></a></li>
+                {{/cocoon_google_url}}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{#cocoon_copyright}}
+      <section class="footer_bottom_area pt25 pb25 {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home4 {{/footer_3}}">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+              <div class="copyright-widget text-center">
+                <p>{{{ cocoon_copyright }}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    {{/cocoon_copyright}}
+  {{/footer_4}}
+{{/is_frontpage}}
+{{^is_frontpage}}
+  <section class="footer_one {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home4 {{/footer_3}}">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-3 col-lg-3">
+          <div class="footer_contact_widget {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home4 {{/footer_3}}">
+            <h4>{{{ footer_col_1_title }}}</h4>
+            {{{ footer_col_1_body }}}
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-md-3 col-lg-2">
+          <div class="footer_company_widget {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home4 {{/footer_3}}">
+            <h4>{{{ footer_col_2_title }}}</h4>
+            {{{ footer_col_2_body }}}
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-md-3 col-lg-2">
+          <div class="footer_program_widget {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home4 {{/footer_3}}">
+            <h4>{{{ footer_col_3_title }}}</h4>
+            {{{ footer_col_3_body }}}
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-md-3 col-lg-2">
+          <div class="footer_support_widget {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home4 {{/footer_3}}">
+            <h4>{{{ footer_col_4_title }}}</h4>
+            {{{ footer_col_4_body }}}
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-md-3 col-lg-3">
+          <div class="footer_apps_widget {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home4 {{/footer_3}}">
+            <h4>{{{ footer_col_5_title }}}</h4>
+            {{{ footer_col_5_body }}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer_middle_area p0 {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home4 {{/footer_3}}">
+    <div class="container">
+      <div class="row">
+        {{#logo_footer}}
+          <div class="col-sm-4 {{#logotype_footer}}col-md-3 col-lg-3 col-xl-2{{/logotype_footer}}{{^logotype_footer}}col-md-1 mr25{{/logotype_footer}} pb15 pt15">
+            <div class="logo-widget {{#footer_1}} home1 {{/footer_1}}  {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home3 {{/footer_3}}">
+              {{#logo_image_footer}}<img class="img-fluid" src="{{{footerlogo1}}}" alt="{{ sitename }}">{{/logo_image_footer}}
+              {{#logotype_footer}}<span>{{ sitename }}</span>{{/logotype_footer}}
+            </div>
+          </div>
+        {{/logo_footer}}
+        {{#footer_menu}}
+          <div class="col-sm-8 col-md-5 col-lg-6 col-xl-6 pb25 pt25 brdr_left_right">
+            <div class="footer_menu_widget">
+              {{{footer_menu}}}
+            </div>
+          </div>
+        {{/footer_menu}}
+        <div class="col-sm-12 col-md-4 col-lg-3 col-xl-4 pb15 pt15">
+          <div class="footer_social_widget mt15">
+            <ul>
+              {{#cocoon_facebook_url}}
+                <li class="list-inline-item"><a href="{{{ cocoon_facebook_url }}}"><i class="fa fa-facebook"></i></a></li>
+              {{/cocoon_facebook_url}}
+              {{#cocoon_twitter_url}}
+                <li class="list-inline-item"><a href="{{{ cocoon_twitter_url }}}"><i class="fa fa-twitter"></i></a></li>
+              {{/cocoon_twitter_url}}
+              {{#cocoon_instagram_url}}
+                <li class="list-inline-item"><a href="{{{ cocoon_instagram_url }}}"><i class="fa fa-instagram"></i></a></li>
+              {{/cocoon_instagram_url}}
+              {{#cocoon_pinterest_url}}
+                <li class="list-inline-item"><a href="{{{ cocoon_pinterest_url }}}"><i class="fa fa-pinterest"></i></a></li>
+              {{/cocoon_pinterest_url}}
+              {{#cocoon_dribbble_url}}
+                <li class="list-inline-item"><a href="{{{ cocoon_dribbble_url }}}"><i class="fa fa-dribbble"></i></a></li>
+              {{/cocoon_dribbble_url}}
+              {{#cocoon_google_url}}
+                <li class="list-inline-item"><a href="{{{ cocoon_google_url }}}"><i class="fa fa-google"></i></a></li>
+              {{/cocoon_google_url}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{#cocoon_copyright}}
+    <section class="footer_bottom_area pt25 pb25 {{#footer_2}} home3 {{/footer_2}} {{#footer_3}} home4 {{/footer_3}}">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="copyright-widget text-center">
+              <p>{{{ cocoon_copyright }}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{/cocoon_copyright}}
+{{/is_frontpage}}
+<a class="scrollToHome" href="#"><i class="flaticon-up-arrow-1"></i></a>
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/jquery-3.3.1.js"></script>
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/jquery-migrate-3.0.0.min.js"></script>
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/cocoon.preprocess.js"></script>
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/jquery.mmenu.all.js"></script>
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/ace-responsive-menu.js"></script>
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/bootstrap-select.min.js"></script>
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/isotop.js"></script>
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/snackbar.min.js"></script>
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/simplebar.js"></script>
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/parallax.js"></script>
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/scrollto.js"></script>
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/jquery-scrolltofixed-min.js"></script>
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/jquery.counterup.js"></script>
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/wow.min.js"></script>
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/progressbar.js"></script>
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/slider.js"></script>
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/timepicker.js"></script>
+{{#gmaps_key}}<script src="//maps.googleapis.com/maps/api/js?key={{gmaps_key}}"></script>{{/gmaps_key}}
+<script src="{{{ config.wwwroot }}}/theme/edumy/javascript/script.js"></script>
+{{{custom_js}}}
+{{{ output.standard_end_of_body_html }}}

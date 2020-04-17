@@ -1,0 +1,60 @@
+<div class="header_top home7">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-xl-5"></div>
+      <div class="col-lg-7 col-xl-7">
+        <ul class="sign_up_btn home7 dn-smd text-right">
+          <li class="list-inline-item"><a class="light_white" href="tel:{{{phone}}}">{{{phone}}}</a></li>
+          <li class="list-inline-item"><a class="light_white" href="mailto:{{{email_address}}}">{{{email_address}}}</a></li>
+          {{!<li class="list-inline-item">
+            <div class="header_top_lang_widget_home6 home7">
+              <select class="selectpicker show-tick">
+                <option>English</option>
+                <option>Frenc</option>
+                <option>Italian</option>
+                <option>Spanish</option>
+                <option>Turkey</option>
+              </select>
+            </div>
+          </li>}}
+        </ul><!-- Button trigger modal -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Main Header Nav -->
+<header class="header-nav menu_style_home_seven main-menu">
+  <div class="container">
+    <!-- Ace Responsive Menu -->
+    <nav>
+      <!-- Menu Toggle btn-->
+      <div class="menu-toggle">
+        <img class="nav_logo_img img-fluid" src="{{{headerlogo3}}}" alt="{{{sitename}}}">
+        <button type="button" id="menu-btn">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      {{#logo_image}}
+        <a href="{{{ config.wwwroot }}}" class="navbar_brand float-left dn-smd">
+          <img class="logo1 home7 img-fluid" src="{{{headerlogo3}}}" alt="{{{sitename}}}">
+        </a>
+      {{/logo_image}}
+      <div class="menu7_search home7 float-right">
+        <div class="search_overlay">
+          <a id="search-button-listener" class="mk-search-trigger mk-fullscreen-trigger" href="#">
+            <span id="search-button"><i class="flaticon-magnifying-glass"></i></span>
+          </a>
+        </div>
+      </div>
+      <!-- Responsive Menu Structure-->
+      <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+      <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+        {{{ output.custom_menu }}}
+        {{> theme_edumy/ccn_navbar_user }}
+      </ul>
+    </nav>
+    <!-- End of Responsive Menu -->
+  </div>
+</header>
